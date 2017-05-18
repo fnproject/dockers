@@ -1,3 +1,4 @@
+require 'open3'
 
 class ExecError < StandardError 
   attr_accessor :exit_status, :last_line
@@ -32,8 +33,8 @@ def stream_exec(cmd)
 end
 
 def build(name)
-  puts "Building #{name}..."
-  cmd = "docker build --no-cache -t #{name} ."
+  puts "Building #{name}..." 
+  cmd = "docker build --build-arg HTTP_PROXY --no-cache -t #{name} ."
 
   stream_exec(cmd)
 end

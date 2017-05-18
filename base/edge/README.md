@@ -1,5 +1,5 @@
 
-This image is a base image for Iron.io's set of tiny images. Currently, it's just the alpine OS image.
+This image is a base image for all the other images. Currently, it's just the alpine OS image with CA certs installed. 
 
 ## Building this image
 
@@ -12,11 +12,11 @@ docker pull alpine:edge
 Then build it:
 
 ```sh
-docker build -t iron/base:edge .
+docker build -t funcy/base:edge .
 ```
 
 Push:
 
 ```sh
-docker push iron/base
+docker push funcy/base
 ```

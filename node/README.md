@@ -1,11 +1,11 @@
-[![](https://badge.imagelayers.io/iron/node:latest.svg)](https://imagelayers.io/?images=iron/node:latest 'Get your own badge on imagelayers.io')
+[![](https://badge.imagelayers.io/funcy/node:latest.svg)](https://imagelayers.io/?images=funcy/node:latest 'Get your own badge on imagelayers.io')
 
-Docker Hub: https://hub.docker.com/r/iron/node/
+Docker Hub: https://hub.docker.com/r/funcy/node/
 
 ## Using
 
 ```sh
-docker run -it --rm iron/node node -v
+docker run -it --rm funcy/node node -v
 ```
 
 ## Building this image
@@ -19,5 +19,5 @@ ruby build.rb
 Push:
 
 ```sh
-docker push iron/node
+docker push funcy/node
 ```

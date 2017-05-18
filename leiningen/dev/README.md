@@ -8,7 +8,7 @@ that are built using [Leiningen](http://leiningen.org/).
 To run a Clojure repl:
 
 ```sh
-docker run -it iron/leiningen:dev lein repl
+docker run -it funcy/leiningen:dev lein repl
 ```
 
 ## Build this image

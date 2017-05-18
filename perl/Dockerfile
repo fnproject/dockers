@@ -1,4 +1,4 @@
-FROM iron/base
+FROM funcy/base
 
 RUN apk update && apk upgrade \
   && apk add perl \

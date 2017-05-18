@@ -1,4 +1,4 @@
-FROM iron/base
+FROM funcy/base
 
 RUN echo '@testing http://nl.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories
 

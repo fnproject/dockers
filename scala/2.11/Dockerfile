@@ -1,4 +1,4 @@
-FROM iron/java:1.8
+FROM funcy/java:1.8
 
 RUN apk update && apk upgrade
 RUN apk add bash

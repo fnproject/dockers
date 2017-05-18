@@ -2,5 +2,5 @@
 ## Using
 
 ```sh
-docker run -it --rm iron/php:dev composer install
+docker run -it --rm funcy/php:dev composer install
 ```

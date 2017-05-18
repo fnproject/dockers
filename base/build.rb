@@ -4,7 +4,7 @@ require_relative '../utils/builder'
 stream_exec('docker pull alpine')
 stream_exec('docker pull alpine:edge')
  
-name = "iron/base"
+name = "funcy/base"
 
 tag = "latest"
 build("#{name}:#{tag}")

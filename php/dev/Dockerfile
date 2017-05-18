@@ -1,4 +1,4 @@
-FROM iron/php
+FROM funcy/php
 
 # php7-dev has a TON of packages, probably best for people to just add what they need. 
 # RUN apk update && apk upgrade \

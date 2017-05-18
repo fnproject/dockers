@@ -1,7 +1,7 @@
 # TODO: copy the build.rb file from ruby and update this. And move into parent dir. 
 require 'open3'
 
-base = 'iron/node'
+base = 'funcy/node'
 name = "#{base}:dev"
 
 # TEMP: using mhart version

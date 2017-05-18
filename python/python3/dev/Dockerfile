@@ -1,4 +1,4 @@
-FROM iron/python:3
+FROM funcy/python:3
 
 RUN apk update && apk upgrade
 

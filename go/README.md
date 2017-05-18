@@ -1,6 +1,6 @@
-Image on Docker Hub: https://hub.docker.com/r/iron/go
+Image on Docker Hub: https://hub.docker.com/r/funcy/go
 
-Use `iron/go:dev` for building your Go programs and `iron/go` for running them.
+Use `funcy/go:dev` for building your Go programs and `funcy/go` for running them.
 
 ## Usage
 
@@ -15,5 +15,5 @@ ruby build.rb
 Push:
 
 ```sh
-docker push iron/go
+docker push funcy/go
 ```

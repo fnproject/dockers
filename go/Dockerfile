@@ -1,4 +1,4 @@
-FROM iron/base:edge
+FROM funcy/base:edge
 
 # The Go image doesn't need anything else.
-# Use iron/go:dev to build.
+# Use funcy/go:dev to build.

@@ -1,7 +1,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-name = "iron/go"
+name = "funcy/go"
 
 # latest doesn't actually contain go, so swap dev and latest in this build
 
@@ -19,10 +19,12 @@ v = v[2..v.length]
 p v
 v += ".0"
 p v
-vtag(name, tag, v, true)
+new_tags = vtag(name, tag, v, true)
 
 Dir.chdir '../'
 p Dir.pwd
 tag = "latest"
 build("#{name}:#{tag}")
-vtag(name, tag, v, false)
+new_tags += vtag(name, tag, v, false)
+
+push_all(name, new_tags)

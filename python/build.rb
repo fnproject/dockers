@@ -2,7 +2,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-name = "iron/python"
+name = "funcy/python"
 
 # python2 first
 Dir.chdir 'python2'

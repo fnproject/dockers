@@ -2,5 +2,5 @@
 ## Using
 
 ```sh
-docker run -it --rm iron/python:2 python --version
+docker run -it --rm funcy/python:2 python --version
 ```

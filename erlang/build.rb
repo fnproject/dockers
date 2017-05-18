@@ -1,7 +1,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-name = "iron/erlang"
+name = "funcy/erlang"
 
 tag = "latest"
 build("#{name}:#{tag}")

@@ -1,7 +1,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-name = "iron/php"
+name = "funcy/php"
 
 tag = "latest"
 build("#{name}:#{tag}")

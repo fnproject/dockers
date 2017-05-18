@@ -1,22 +1,22 @@
 
-Image on Docker Hub: https://hub.docker.com/r/iron/elixir
+Image on Docker Hub: https://hub.docker.com/r/funcy/elixir
 
 ## Building this image
 
 ```sh
-docker build -t iron/elixir:latest .
+docker build -t funcy/elixir:latest .
 ```
 
-Tag the version, check it with `docker run --rm iron/elixir elixir -v`:
+Tag the version, check it with `docker run --rm funcy/elixir elixir -v`:
 
 ```sh
-docker tag iron/elixir:latest iron/elixir:X
-docker tag iron/elixir:latest iron/elixir:X.Y
-docker tag iron/elixir:latest iron/elixir:X.Y.Z
+docker tag funcy/elixir:latest funcy/elixir:X
+docker tag funcy/elixir:latest funcy/elixir:X.Y
+docker tag funcy/elixir:latest funcy/elixir:X.Y.Z
 ```
 
 Push:
 
 ```sh
-docker push iron/elixir
+docker push funcy/elixir
 ```

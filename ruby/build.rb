@@ -1,7 +1,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-name = "iron/ruby"
+name = "funcy/ruby"
 
 tag = "latest"
 build("#{name}:#{tag}")

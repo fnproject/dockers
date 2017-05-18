@@ -2,19 +2,19 @@
 ## Building this image
 
 ```sh
-docker build -t iron/scala:latest .
+docker build -t funcy/scala:latest .
 ```
 
-Tag the version, check it with `docker run --rm iron/scala scala -version`:
+Tag the version, check it with `docker run --rm funcy/scala scala -version`:
 
 ```sh
-docker tag -f iron/scala:latest iron/scala:X
-docker tag -f iron/scala:latest iron/scala:X.Y
-docker tag -f iron/scala:latest iron/scala:X.Y.Z
+docker tag -f funcy/scala:latest funcy/scala:X
+docker tag -f funcy/scala:latest funcy/scala:X.Y
+docker tag -f funcy/scala:latest funcy/scala:X.Y.Z
 ```
 
 Push:
 
 ```sh
-docker push iron/scala
+docker push funcy/scala
 ```

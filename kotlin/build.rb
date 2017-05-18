@@ -1,7 +1,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-name = "iron/kotlin"
+name = "funcy/kotlin"
 
 # latest doesn't actually contain go, so swap dev and latest in this build
 
