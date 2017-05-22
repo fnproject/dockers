@@ -27,12 +27,12 @@ puts v
 split = v.split('_')
 v = split[0]
 puts v
-vtag(name, tag, v, false, 1)
+new_tags = vtag(name, tag, v, false, 1)
 
 Dir.chdir 'dev'
 tag = "1.7-dev"
 build("#{name}:#{tag}")
-vtag(name, tag, v, true, 1)
+new_tags += vtag(name, tag, v, true, 1)
 
 # now 1.8
 Dir.chdir '../../java-1.8'
@@ -57,10 +57,12 @@ puts v
 split = v.split('_')
 v = split[0]
 puts v
-vtag(name, tag, v, false)
+new_tags += vtag(name, tag, v, false)
 
 Dir.chdir 'dev'
 tag = "dev"
 build("#{name}:#{tag}")
 puts v
-vtag(name, tag, v, true)
+new_tags += vtag(name, tag, v, true)
+
+push_all(name, new_tags)
