@@ -1,3 +1,3 @@
 FROM golang:alpine
 
-RUN apk add --no-cache wget curl make git bzr mercurial 
+RUN apk add --no-cache wget curl git bzr mercurial build-base
