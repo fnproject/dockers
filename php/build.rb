@@ -11,9 +11,11 @@ puts v
 # returns: PHP 5.6.17 (cli) (built: Jan 24 2016 22:24:02) \nCopyright (c) 1997-2015 The PHP Group\nZend Engine v2.6.0, Copyright (c) 1998-2015 Zend Technologies
 v = v.split(' ')[1]
 puts v
-vtag(name, tag, v, false)
+new_tags = vtag(name, tag, v, false)
 
 Dir.chdir 'dev'
 tag = "dev"
 build("#{name}:#{tag}")
-vtag(name, tag, v, true)
+new_tags += vtag(name, tag, v, true)
+
+push_all(name, new_tags)
