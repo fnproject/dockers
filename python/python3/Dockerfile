@@ -1,5 +1,3 @@
 FROM funcy/base
 
-RUN apk update && apk upgrade \
-  && apk add python3 \
-  && rm -rf /var/cache/apk/*
+RUN apk add --no-cache python3
