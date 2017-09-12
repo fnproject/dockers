@@ -1,4 +1,4 @@
-FROM funcy/java:1.8
+FROM fnproject/java:1.8
 
 # To disable warning
 ENV LEIN_ROOT 1

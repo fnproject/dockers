@@ -1,4 +1,4 @@
-FROM funcy/base
+FROM fnproject/base
 
 RUN apk update && apk upgrade \
   && apk add perl perl-dev build-base wget curl \

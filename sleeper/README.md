@@ -3,7 +3,7 @@
 Sleeps for X seconds based on input to STDIN. 
 
 ```
-echo '{"sleep": 5}' | docker run --rm -i funcy/sleeper
+echo '{"sleep": 5}' | docker run --rm -i fnproject/sleeper
 ```
 
 ## Notes
@@ -11,5 +11,5 @@ echo '{"sleep": 5}' | docker run --rm -i funcy/sleeper
 To get initial Gemfile.lock:
 
 ```
-docker run --rm -v ${PWD}:/func -w /func funcy/ruby:dev bundle install --path vendor/bundle
+docker run --rm -v ${PWD}:/func -w /func fnproject/ruby:dev bundle install --path vendor/bundle
 ```

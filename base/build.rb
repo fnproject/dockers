@@ -1,10 +1,13 @@
 require 'open3'
 require_relative '../utils/builder'
 
+# puts "XXX ENV: #{ENV.inspect}"
+reg = ENV['REG']
+
 stream_exec('docker pull alpine')
 stream_exec('docker pull alpine:edge')
  
-name = "funcy/base"
+name = "#{reg}/base"
 
 tag = "latest"
 build("#{name}:#{tag}")

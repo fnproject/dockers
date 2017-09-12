@@ -1,7 +1,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-name = "funcy/node"
+name = "fnproject/node"
 
 tag = "latest"
 build("#{name}:#{tag}")

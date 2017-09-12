@@ -1,6 +1,6 @@
-Image on Docker Hub: https://hub.docker.com/r/funcy/go
+Image on Docker Hub: https://hub.docker.com/r/fnproject/go
 
-Use `funcy/go:dev` for building your Go programs and `funcy/go` for running them.
+Use `fnproject/go:dev` for building your Go programs and `fnproject/go` for running them.
 
 ## Usage
 
@@ -15,5 +15,5 @@ ruby build.rb
 Push:
 
 ```sh
-docker push funcy/go
+docker push fnproject/go
 ```

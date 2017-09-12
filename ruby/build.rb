@@ -1,7 +1,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-name = "funcy/ruby"
+name = "#{ENV['REG']}/ruby"
 
 tag = "latest"
 build("#{name}:#{tag}")

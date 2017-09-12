@@ -12,11 +12,11 @@ docker pull alpine:edge
 Then build it:
 
 ```sh
-docker build -t funcy/base:edge .
+docker build -t fnproject/base:edge .
 ```
 
 Push:
 
 ```sh
-docker push funcy/base
+docker push fnproject/base
 ```

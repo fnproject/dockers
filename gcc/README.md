@@ -1,25 +1,25 @@
-[![](http://badge-imagelayers.iron.io/funcy/gcc:latest.svg)](http://imagelayers.iron.io/?images=funcy/gcc:latest 'Get your own badge on imagelayers.iron.io')
+[![](http://badge-imagelayers.iron.io/fnproject/gcc:latest.svg)](http://imagelayers.iron.io/?images=fnproject/gcc:latest 'Get your own badge on imagelayers.iron.io')
 
-Use `funcy/gcc:dev` for building your C/C++ programs and `funcy/gcc` for running them.
+Use `fnproject/gcc:dev` for building your C/C++ programs and `fnproject/gcc` for running them.
 
 ## Building this image
 
 ```sh
-docker build -t funcy/gcc:latest .
+docker build -t fnproject/gcc:latest .
 ```
 
 NOTE: Since this doesn't need any C specific stuff, use the versions from the `dev` build.
 
-Tag the version, check it with `docker run --rm funcy/gcc:dev gcc -v`:
+Tag the version, check it with `docker run --rm fnproject/gcc:dev gcc -v`:
 
 ```sh
-docker tag -f funcy/gcc:latest funcy/gcc:5
-docker tag -f funcy/gcc:latest funcy/gcc:5.Y
-docker tag -f funcy/gcc:latest funcy/gcc:5.Y.Z
+docker tag -f fnproject/gcc:latest fnproject/gcc:5
+docker tag -f fnproject/gcc:latest fnproject/gcc:5.Y
+docker tag -f fnproject/gcc:latest fnproject/gcc:5.Y.Z
 ```
 
 Push:
 
 ```sh
-docker push funcy/go
+docker push fnproject/go
 ```

@@ -1,4 +1,4 @@
-FROM funcy/python:3
+FROM fnproject/python:3
 
 RUN apk add --no-cache curl python3
 

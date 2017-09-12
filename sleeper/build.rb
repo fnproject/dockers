@@ -1,6 +1,6 @@
 require_relative '../utils/builder'
  
-name = "funcy/sleeper"
+name = "fnproject/sleeper"
 tag = "latest"
 build("#{name}:#{tag}")
 

@@ -1,1 +1,1 @@
-FROM funcy/java:1.8
+FROM fnproject/java:1.8

@@ -1,19 +1,19 @@
-[![](http://badge-imagelayers.iron.io/funcy/ruby:latest.svg)](http://imagelayers.iron.io/?images=funcy/ruby:latest 'Get your own badge on imagelayers.iron.io')
+[![](http://badge-imagelayers.iron.io/fnproject/ruby:latest.svg)](http://imagelayers.iron.io/?images=fnproject/ruby:latest 'Get your own badge on imagelayers.iron.io')
 
-Image on Docker Hub: https://hub.docker.com/r/funcy/ruby
+Image on Docker Hub: https://hub.docker.com/r/fnproject/ruby
 
 ## Using this image for your Ruby apps/programs
 
 ### 1. Vendor dependencies (if you update your Gemfile, rerun this):
 
 ```sh
-docker run --rm -v "$PWD":/worker -w /worker funcy/ruby:dev bundle install --standalone --clean
+docker run --rm -v "$PWD":/worker -w /worker fnproject/ruby:dev bundle install --standalone --clean
 ```
 
 If you're using Nokogiri, use this one:
 
 ```sh
-docker run --rm -v "$PWD":/worker -w /worker funcy/ruby:dev sh -c 'bundle config --local build.nokogiri --use-system-libraries && bundle install --standalone --clean'
+docker run --rm -v "$PWD":/worker -w /worker fnproject/ruby:dev sh -c 'bundle config --local build.nokogiri --use-system-libraries && bundle install --standalone --clean'
 ```
 
 Then require the vendored gems. Notice in `hello.rb`, we add the following so it uses the vendored gems:
@@ -27,17 +27,17 @@ require_relative 'bundle/bundler/setup'
 Test your code:
 
 ```sh
-docker run --rm -it -v $PWD:/app -w /app funcy/ruby ruby hello.rb
+docker run --rm -it -v $PWD:/app -w /app fnproject/ruby ruby hello.rb
 ```
 
-Notice we're using funcy/ruby:dev to build and funcy/ruby to run. funcy/ruby is much smaller.
+Notice we're using fnproject/ruby:dev to build and fnproject/ruby to run. fnproject/ruby is much smaller.
 
 ## Building an image for your Ruby app:
 
 Make a Dockerfile:
 
 ```
-FROM funcy/ruby
+FROM fnproject/ruby
 
 WORKDIR /app
 ADD . /app

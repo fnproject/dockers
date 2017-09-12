@@ -1,4 +1,4 @@
-FROM funcy/erlang
+FROM fnproject/erlang
 
 # Env
 ENV REBAR_VERSION 3.3.6

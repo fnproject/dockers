@@ -1,4 +1,4 @@
-FROM funcy/base:edge
+FROM fnproject/base:edge
 
 # The Go image doesn't need anything else.
-# Use funcy/go:dev to build.
+# Use fnproject/go:dev to build.

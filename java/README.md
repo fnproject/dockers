@@ -1,7 +1,7 @@
-Docker Hub: https://hub.docker.com/r/funcy/java/
+Docker Hub: https://hub.docker.com/r/fnproject/java/
 
-The `funcy/java:dev` images are for building, they have the JDK installed.
-The `funcy/java` ones are for running, they just have the JRE installed.
+The `fnproject/java:dev` images are for building, they have the JDK installed.
+The `fnproject/java` ones are for running, they just have the JRE installed.
 
 ## Usage
 

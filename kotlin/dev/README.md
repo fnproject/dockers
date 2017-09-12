@@ -1,13 +1,13 @@
 Image can be used to build Kotlin source code. 
 
-To execute resulting JVM bytecode please use ```funcy/java:1.8```
+To execute resulting JVM bytecode please use ```fnproject/java:1.8```
 
 ## Usage
 
 ### Check the kotlin image is working
 
 ```sh
-docker run -it --rm funcy/kotlin:dev kotlin -version
+docker run -it --rm fnproject/kotlin:dev kotlin -version
 ```
 
 ### Example kotlin compile (java runtime):
@@ -22,32 +22,32 @@ fun main(args: Array<String>) {
 
 Compile kotlin script with java runtime support:
 ```sh
-docker run -it --rm -v "$PWD":/build -w /build funcy/kotlin:dev kotlinc hello.kt -include-runtime -d hello.jar
+docker run -it --rm -v "$PWD":/build -w /build fnproject/kotlin:dev kotlinc hello.kt -include-runtime -d hello.jar
 ```
 
 Test the compiled jar:
 ```sh
-docker run -it --rm -v "$PWD":/app -w /app funcy/java:1.8 java -jar hello.jar World
+docker run -it --rm -v "$PWD":/app -w /app fnproject/java:1.8 java -jar hello.jar World
 ```
 
 ## Building this image
 
 ```sh
-docker build -t funcy/kotlin:dev .
+docker build -t fnproject/kotlin:dev .
 ```
 
-Tag the version, check it with `docker run --rm funcy/kotlin:dev kotlin -version`:
+Tag the version, check it with `docker run --rm fnproject/kotlin:dev kotlin -version`:
 
 ```sh
-docker tag -f funcy/kotlin:dev funcy/kotlin:X-dev
-docker tag -f funcy/kotlin:dev funcy/kotlin:X.Y-dev
-docker tag -f funcy/kotlin:dev funcy/kotlin:X.Y.Z-dev
+docker tag -f fnproject/kotlin:dev fnproject/kotlin:X-dev
+docker tag -f fnproject/kotlin:dev fnproject/kotlin:X.Y-dev
+docker tag -f fnproject/kotlin:dev fnproject/kotlin:X.Y.Z-dev
 ```
 
 Push:
 
 ```sh
-docker push funcy/kotlin
+docker push fnproject/kotlin
 ```
 
 ## Updating Kotlin version:

@@ -14,7 +14,7 @@ def stream_exec(cmd)
   puts "Executing cmd: #{cmd}"
   exit_status = nil
   last_line = ""
-  Open3.popen2e(cmd) do |stdin, stdout_stderr, wait_thread|
+  Open3.popen2e({"REG" => "fnproject"}, cmd) do |stdin, stdout_stderr, wait_thread|
     Thread.new do
       stdout_stderr.each {|l| 
         puts l
@@ -34,7 +34,7 @@ end
 
 def build(name)
   puts "Building #{name}..." 
-  cmd = "docker build --build-arg HTTP_PROXY --build-arg HTTPS_PROXY --no-cache -t #{name} ."
+  cmd = "docker build --build-arg HTTP_PROXY --build-arg HTTPS_PROXY --build-arg REG=fnproject --no-cache -t #{name} ."
 
   stream_exec(cmd)
 end

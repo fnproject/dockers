@@ -1,8 +1,9 @@
 # Programming Docker Images - Microcontainers
 
 The purpose of these images is to provide the smallest possible images for
-every major programming language. Read more about it in this [Microcontainers blog post](http://www.iron.io/blog/2016/01/microcontainers-tiny-portable-containers.html).
+every major programming language. Read more about it in this
+[Microcontainers blog post](https://medium.com/travis-on-docker/microcontainers-tiny-portable-docker-containers-1507e3bf8688).
 
-Use the `funcy/LANGUAGE:dev` images for building/vendoring.
+Use the `fnproject/LANGUAGE:dev` images for building/vendoring.
 
-Use the `funcy/LANGUAGE` images for running (much smaller than the dev ones).
+Use the `fnproject/LANGUAGE` images for running (much smaller than the dev ones).

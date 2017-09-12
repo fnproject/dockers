@@ -1,7 +1,7 @@
 require 'open3'
 require_relative '../utils/builder'
  
-name = "funcy/error"
+name = "fnproject/error"
 tag = "latest"
 build("#{name}:#{tag}")
 

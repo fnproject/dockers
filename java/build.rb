@@ -2,7 +2,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-name = "funcy/java"
+name = "fnproject/java"
 
 # python2 first
 Dir.chdir 'java-1.7'

@@ -1,4 +1,4 @@
-Image on Docker Hub: https://hub.docker.com/r/funcy/python
+Image on Docker Hub: https://hub.docker.com/r/fnproject/python
 
 ## Building Python images
 
@@ -9,5 +9,5 @@ ruby build.rb
 Then push:
 
 ```sh
-docker push funcy/python
+docker push fnproject/python
 ```

@@ -1,4 +1,4 @@
-FROM funcy/java:1.8
+FROM fnproject/java:1.8
 
 ENV KOTLIN_COMPILER_URL=https://github.com/JetBrains/kotlin/releases/download/v1.0.5/kotlin-compiler-1.0.5.zip
 

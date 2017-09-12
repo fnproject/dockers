@@ -7,5 +7,5 @@ that it doesn't contain the JDK, so you can't use it to compile Java code.
 ## Using
 
 ```sh
-docker run -it --rm funcy/java:1.7 java -version
+docker run -it --rm fnproject/java:1.7 java -version
 ```

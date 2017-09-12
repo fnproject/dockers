@@ -1,9 +1,9 @@
-Image on Docker Hub: https://hub.docker.com/r/funcy/php
+Image on Docker Hub: https://hub.docker.com/r/fnproject/php
 
 ## Using
 
 ```sh
-docker run -it --rm funcy/php php -v
+docker run -it --rm fnproject/php php -v
 ```
 
 ## Building this image
@@ -15,5 +15,5 @@ ruby build.rb
 Push:
 
 ```sh
-docker push funcy/php
+docker push fnproject/php
 ```

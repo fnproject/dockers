@@ -1,13 +1,13 @@
-Image on Docker Hub: https://hub.docker.com/r/funcy/erlang
+Image on Docker Hub: https://hub.docker.com/r/fnproject/erlang
 
 ## Building
 
 ```sh
-docker build -t funcy/erlang:latest .
+docker build -t fnproject/erlang:latest .
 ```
 
 ## Using
 
 ```sh
-docker run -it --rm funcy/erlang erl
+docker run -it --rm fnproject/erlang erl
 ```
