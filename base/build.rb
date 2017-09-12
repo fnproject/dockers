@@ -1,7 +1,6 @@
 require 'open3'
 require_relative '../utils/builder'
 
-# puts "XXX ENV: #{ENV.inspect}"
 reg = ENV['REG']
 
 stream_exec('docker pull alpine')
