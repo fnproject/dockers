@@ -5,9 +5,9 @@ require_relative 'utils/builder'
 glob_param = '*'
 if ARGV.length > 0 
     # first arg can be chars to start from, in case it failed partway through
-    glob_param = "[#{ARGV[0]}]*"
+    glob_param = "[#{ARGV[0]}-z]*"
 end
-
+# p Dir.glob(glob_param)
 Dir.glob(glob_param).select do |f|
     puts "checking #{f}"
     if File.directory?(f)

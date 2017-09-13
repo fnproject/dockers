@@ -7,3 +7,13 @@ every major programming language. Read more about it in this
 Use the `fnproject/LANGUAGE:dev` images for building/vendoring.
 
 Use the `fnproject/LANGUAGE` images for running (much smaller than the dev ones).
+
+## Building
+
+Run:
+
+```sh
+ruby build.rb [START_FROM]
+```
+
+If build breaks somewhere, can continue by adding `START_FROM`.
