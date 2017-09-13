@@ -2,7 +2,13 @@
 
 require_relative 'utils/builder'
 
-Dir.glob('*').select do |f|
+glob_param = '*'
+if ARGV.length > 0 
+    # first arg can be chars to start from, in case it failed partway through
+    glob_param = "[#{ARGV[0]}]*"
+end
+
+Dir.glob(glob_param).select do |f|
     puts "checking #{f}"
     if File.directory?(f)
         Dir.chdir(f)
