@@ -41,7 +41,6 @@ build("#{name}:#{tag}")
 v, status = Open3.capture2e("docker run --rm #{name}:#{tag} java -version")
 v = v.strip
 p v
-# returns: Python 2.7.11
 v = v.split( /\r?\n/ )
 p v
 v.each do |line|
