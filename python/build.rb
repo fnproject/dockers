@@ -1,6 +1,6 @@
 require_relative '../utils/builder'
 
-name = "#{ENV['REG']}/python"
+name = "#{ENV['REG'] || 'fnproject'}/python"
 
 # python2 first
 Dir.chdir 'python2'

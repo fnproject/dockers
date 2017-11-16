@@ -1,7 +1,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-name = "#{ENV['REG']}/ruby"
+name = "#{ENV['REG'] || 'fnproject'}/ruby"
 
 tag = "latest"
 build("#{name}:#{tag}")

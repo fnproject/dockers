@@ -1,7 +1,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-reg = ENV['REG']
+reg = ENV['REG'] || 'fnproject'
 
 stream_exec('docker pull alpine')
 stream_exec('docker pull alpine:edge')

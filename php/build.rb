@@ -1,7 +1,7 @@
 require 'open3'
 require_relative '../utils/builder'
 
-name = "#{ENV['REG']}/php"
+name = "#{ENV['REG'] || 'fnproject'}/php"
 
 tag = "latest"
 build("#{name}:#{tag}")
