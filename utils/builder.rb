@@ -34,7 +34,7 @@ end
 
 def build(name)
   puts "Building #{name}..." 
-  cmd = "docker build --build-arg HTTP_PROXY --build-arg HTTPS_PROXY --build-arg REG=fnproject --no-cache -t #{name} ."
+  cmd = "docker build --build-arg HTTP_PROXY --build-arg HTTPS_PROXY --build-arg REG=fnproject -t #{name} ."
 
   stream_exec(cmd)
 end
