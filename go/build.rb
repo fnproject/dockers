@@ -15,9 +15,7 @@ p v
 # returns: go version go1.6 linux/amd64
 v = v.split(' ')[2]
 p v
-v = v[2..v.length]
-p v
-v += ".0"
+v = v[2..(v.length)]
 p v
 new_tags = vtag(name, tag, v, true)
 

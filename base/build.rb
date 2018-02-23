@@ -29,6 +29,7 @@ new_tags = vtag(name, tag, v, false)
 
 Dir.chdir 'edge'
 tag = "edge"
+stream_exec("docker pull alpine:edge")
 build("#{name}:#{tag}")
 new_tags << tag
 

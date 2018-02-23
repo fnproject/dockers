@@ -1,4 +1,3 @@
+# Go dev image
 
-## Usage
-
-See here: https://github.com/iron-io/dockerworker/tree/master/go for example and usage.
+Has Go and build tools installed.
