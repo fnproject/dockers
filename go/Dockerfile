@@ -1,4 +1,3 @@
+FROM fnproject/go:dev as build-stage
 FROM fnproject/base:edge
-
-# The Go image doesn't need anything else.
-# Use fnproject/go:dev to build.
+COPY --from=build-stage /usr/local/go/lib/time/zoneinfo.zip /usr/local/go/lib/time/zoneinfo.zip
