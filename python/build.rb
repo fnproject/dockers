@@ -3,7 +3,7 @@ require_relative '../utils/builder'
 name = "#{ENV['REG'] || 'fnproject'}/python"
 
 Dir.chdir 'python3.6'
-tag = "latest"
+tag = "3.6"
 build("#{name}:#{tag}")
 v, status = Open3.capture2e("docker run --rm #{name}:#{tag} python3 --version")
 v = v.strip
