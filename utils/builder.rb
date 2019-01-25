@@ -15,16 +15,11 @@ def stream_exec(cmd)
   exit_status = nil
   last_line = ""
   Open3.popen2e({"REG" => "fnproject"}, cmd) do |stdin, stdout_stderr, wait_thread|
-    Thread.new do
-      stdout_stderr.each {|l| 
-        puts l
-        # Save last line for error checking
-        last_line = l
-      }
-    end
-
-    # stdin.puts 'ls'
-    # stdin.close
+    stdout_stderr.each {|l| 
+      puts l
+      # Save last line for error checking
+      last_line = l
+    }
 
     exit_status = wait_thread.value
     raise ExecError.new(exit_status, last_line) if exit_status.exitstatus != 0

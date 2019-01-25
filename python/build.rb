@@ -10,6 +10,6 @@ v = v.strip
 p v
 v = v.split(' ')[1]
 p v
-new_tags += vtag(name, tag, v, false)
+new_tags = vtag(name, tag, v, false)
 
 push_all(name, new_tags)
