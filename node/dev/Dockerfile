@@ -7,3 +7,5 @@ FROM node:alpine
 #   && apk add git build-base nodejs-dev@edge nodejs@edge \
 #   && npm install -g npm \
 #   && rm -rf /var/cache/apk/*
+
+RUN addgroup -g 1000 -S fn && adduser -S -u 1000 -G fn fn
