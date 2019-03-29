@@ -7,4 +7,3 @@ FROM node:alpine
 #   && apk add git build-base nodejs-dev@edge nodejs@edge \
 #   && npm install -g npm \
 #   && rm -rf /var/cache/apk/*
-
