@@ -6,7 +6,7 @@ RUN apk --no-cache add bash
 
 RUN apk add --update openssl
 
-RUN mkdir /opt
+RUN mkdir -p /opt
 
 RUN wget $KOTLIN_COMPILER_URL -O /tmp/a.zip && \
     unzip /tmp/a.zip -d /opt && \
