@@ -9,8 +9,8 @@ if ARGV.length > 0
 end
 # p Dir.glob(glob_param)
 Dir.glob(glob_param).select do |f|
-    puts "checking #{f}"
     next if f == "mono" # https://bugs.alpinelinux.org/issues/9736
+    puts "checking #{f}"
     if File.directory?(f)
         Dir.chdir(f)
         if File.file?('build.rb')
